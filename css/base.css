@@ -1,0 +1,50 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd{
+    padding:0;
+    margin:0;
+
+    font-size: 14px;
+    font-family: "Microsoft YaHei UI",sans-serif;
+    color: #ccc;
+}
+a{
+    text-decoration:none;
+    color: #ccc;
+}
+a:hover{
+    color: #333;
+}
+li{
+    list-style: none;
+}
+input,textarea{
+    padding: 0;
+    margin: 0;
+    outline:none;
+    border:0 none;
+    vertical-align: middle;
+}
+/*使用伪元素清除浮动*/
+.clearFix::before,
+.clearFix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearFix{
+    *zoom:1;
+}
+/*版心*/
+.w{
+    width: 1200px;
+    margin:0 auto;
+    background: pink;
+}
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
+}

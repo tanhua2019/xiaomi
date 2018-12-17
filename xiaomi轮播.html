@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .xm_box {
+            width: 1200px;
+            height: 460px;
+            border: 3px solid red;
+            margin-top: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner ul li{
+            position: absolute;
+        }
+        .banner_l{
+            width: 234px;
+            height: 400px;
+            background: rgba(0,0,0,.5);
+            padding:30px 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .banner_l li{
+            width: 194px;
+            height: 42px;
+            line-height: 42px;
+            padding: 0 20px;
+        }
+        .banner_l li:hover{
+            background:orange;
+            color: #fff;
+        }
+        .banner_l li a{
+            float: left;
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            font-family: "华文楷体";
+        }
+        .banner_l li span{
+            float: right;
+            font-family: "宋体";
+            font-weight: 700;
+        }
+        .arrow-left,
+        .arrow-right {
+            font-family: "SimSun", "宋体";
+            width: 30px;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .arrow-left:hover,
+        .arrow-right:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .arrow-left {
+            left: 234px;
+        }
+
+        .arrow-right {
+            right: 0;
+        }
+        .points{
+            position: absolute;
+            bottom:20px;
+            right: 20px;
+        }
+        .points ul{}
+        .points ul li{
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            float: left;
+            line-height: 12px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .points ul li:last-child{
+            margin-right: 0;
+        }
+        .points ul li:hover{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+<div class="xm_box w">
+    <div class="banner">
+        <ul>
+            <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15445834783594_TAKmg.jpg" width="1200px" height="460px" alt=""></a></li>
+            <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15427942125674_JlLUW.jpg" width="1200px" height="460px" alt=""></a></li>
+            <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15402884393036_KqnCH.jpg" width="1200px" height="460px" alt=""></a></li>
+            <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15447978785458_LbGnO.jpg" width="1200px" height="460px" alt=""></a></li>
+            <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15446192062566_hvKSn.jpg" width="1200px" height="460px" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="banner_l">
+        <ul>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+            <li><a href="#">手机电话卡</a><span>&gt;</span></li>
+        </ul>
+    </div>
+    <div class="arrow">
+        <span class="arrow-left">&lt;</span>
+        <span class="arrow-right">&gt;</span>
+    </div>
+    <div class="points">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            var $li=$(".banner>ul>li");
+            var count=0;
+
+            $(".arrow-right").click(function () {
+                console.log("hhh");
+                count++;
+                if(count==$li.length){
+                    count=0;
+                }
+                $li.eq(count).fadeIn(1000).siblings().fadeOut(1000);
+            });
+            $(".arrow-left").click(function () {
+                console.log("jjj");
+                count--;
+                if(count==-1){
+                    count=$li.length-1;
+                }
+                $li.eq(count).fadeIn(1000).siblings().fadeOut(1000);
+            })
+        })
+    </script>
+</div>
+</body>
+</html>
