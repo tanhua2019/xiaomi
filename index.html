@@ -11,6 +11,117 @@
 
     <!--引入图标-->
     <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="iconfont2/iconfont.css">
+    <style>
+        .xm_foot .foot_top{
+            height: 80px;
+            line-height: 80px;
+            border-bottom: 1px solid #ccc;
+        }
+        .xm_foot .foot_top li{
+            float: left;
+            width: 238px;
+            text-align: center;
+        }
+        .xm_foot .foot_top li a{
+            font-size: 20px;
+            display: inline-block;
+            color:#000;
+        }
+        .xm_foot .foot_top li a:hover{
+            color:orange;
+        }
+        .xm_foot .foot_top li:nth-child(2n){
+            width: 1px;
+        }
+        .xm_foot .foot_middle{
+            height: 112px;
+            padding:40px 0;
+        }
+        .xm_foot .foot_box{
+            width: 160px;
+            height: 112px;
+            float: left;
+            margin-right: 10px;
+        }
+        .xm_foot .foot_box dt{
+            margin: -1px 0 26px;
+            font-size: 16px;
+            line-height: 1.25;
+            color: #424242;
+        }
+        .xm_foot .foot_box dd{
+            color: #757575;
+        }
+        .xm_foot .foot_box_r{
+            width: 252px;
+            height: 112px;
+            float: right;
+            text-align: center;
+            border-left: 1px solid #000000;
+        }
+        .xm_foot .foot_box_r p:nth-child(1){
+            font-size: 22px;
+            color:orange;
+            margin:0 0 5px;
+        }
+        .xm_foot .foot_box_r p:nth-child(2){
+            font-size: 14px;
+            color:#333333;
+            margin:0 0 16px;
+        }
+        .xm_foot .foot_box_r a{
+            width: 120px;
+            height: 30px;
+            display: inline-block;
+            line-height: 30px;
+            border:1px solid orange;
+            color:orange;
+        }
+        .xm_foot .foot_box_r a:hover{
+            color:#fff;
+            background: orange;
+        }
+        .xm_foot .foot_bottom{
+            height: 120px;
+        }
+        .xm_foot .foot_bottom .foot_logo{
+            width: 55px;
+            height: 55px;
+            background:url(https://s01.mifile.cn/i/logo-footer.png?v2) no-repeat 50% 50%;
+            margin-top: 22px;
+            display: inline-block;
+        }
+        .xm_foot .foot_bottom .foot_info{
+            height: 54px;
+            display: inline-block;
+        }
+        .xm_foot .foot_bottom .foot_info a{
+            color: #404040;
+        }
+        .xm_foot .foot_bottom .foot_info a:hover{
+            color:orange;
+            cursor: pointer;
+        }
+        .xm_foot .foot_bottom .info_r{
+            width: 300px;
+            height:100px;
+            float: right;
+            padding:10px;
+        }
+        .xm_foot .foot_bottom .info_r img{
+            margin-bottom: 10px;
+        }
+        .foot_foot{
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 30px;
+            color: #404040;
+            font-family: "华文楷体";
+        }
+    </style>
 </head>
 <body>
 <!--顶部栏-->
@@ -67,9 +178,9 @@
     </div>
 </div>
 <!--轮播图-->
-<div class="xm_banner">
-    <div class="container w">
-        <div class="banner_box">
+<div class="banner">
+    <div class="banner_box w">
+        <div class="banner_img">
             <ul>
                 <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15445834783594_TAKmg.jpg" width="1200px" height="460px" alt=""></a></li>
                 <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15427942125674_JlLUW.jpg" width="1200px" height="460px" alt=""></a></li>
@@ -77,6 +188,19 @@
                 <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15447978785458_LbGnO.jpg" width="1200px" height="460px" alt=""></a></li>
                 <li><a href="#"><img src="https://i1.mifile.cn/a4/xmad_15446192062566_hvKSn.jpg" width="1200px" height="460px" alt=""></a></li>
             </ul>
+        </div>
+        <div class="points">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="arrow">
+            <span class="arrow_l">&lt;</span>
+            <span class="arrow_r">&gt;</span>
         </div>
         <div class="banner_list">
             <ul>
@@ -92,35 +216,509 @@
                 <li><a href="#">手机电话卡</a><span>&gt;</span></li>
             </ul>
         </div>
-        <div class="arrow">
-            <span class="arrow_l">&lt;</span>
-            <span class="arrow_r">&gt;</span>
-        </div>
-        <div class="points">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="banner_foot">
+            <div class="box1">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-shouji"></span>
+                            选购手机
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-fang"></span>
+                            选购手机
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-lipin"></span>
+                            选购手机
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-wodebaobeiye_genghuan"></span>
+                            选购手机
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-shoujiqia"></span>
+                            选购手机
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-chongzhi"></span>
+                            选购手机
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box2">
+                <img src="https://i1.mifile.cn/a4/xmad_15381015124677_QcEGp.jpg" width="300px" height="170px" alt="">
+            </div>
+            <div class="box2">
+                <img src="https://i1.mifile.cn/a4/xmad_15410029988871_TdzPQ.jpg" width="300px" height="170px" alt="">
+            </div>
+            <div class="box2">
+                <img src="https://i1.mifile.cn/a4/xmad_1539675355282_XfkaT.jpg" width="300px" height="170px" alt="">
+            </div>
         </div>
     </div>
 </div>
+<!--小米闪购-->
+<div class="xm_shangou">
+    <div class="xm_shangou_box w">
+        <div class="shangou_title">
+            <h2>小米闪购</h2>
+            <div class="title_r">
+                <a href="#">&lt;</a>
+                <a href="#">&gt;</a>
+            </div>
+        </div>
+        <div class="shangou_contant">
+            <div class="shangou_box">
+                <div class="title_time">18:00场</div>
+                <img src="https://i1.mifile.cn/f/i/2018/mihome/flashpurchase.png" alt="">
+                <div class="contant">距离开始还有</div>
+                <div class="timebox">
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                </div>
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt=""> </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+        </div>
+        <div class="shangou_foot">
+        </div>
+    </div>
+</div>
+<!--小米闪购-->
+<div class="xm_shangou">
+    <div class="xm_shangou_box w">
+        <div class="shangou_title">
+            <h2>小米闪购</h2>
+            <div class="title_r">
+                <a href="#">&lt;</a>
+                <a href="#">&gt;</a>
+            </div>
+        </div>
+        <div class="shangou_contant">
+            <div class="shangou_box">
+                <div class="title_time">18:00场</div>
+                <img src="https://i1.mifile.cn/f/i/2018/mihome/flashpurchase.png" alt="">
+                <div class="contant">距离开始还有</div>
+                <div class="timebox">
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                </div>
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt=""> </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+        </div>
+        <div class="shangou_foot">
+            <!--<img src="https://i1.mifile.cn/a4/xmad_15444404816837_VdZWU.jpg" alt="">-->
+        </div>
+    </div>
+</div>
+<!--小米闪购-->
+<div class="xm_shangou">
+    <div class="xm_shangou_box w">
+        <div class="shangou_title">
+            <h2>小米闪购</h2>
+            <div class="title_r">
+                <a href="#">&lt;</a>
+                <a href="#">&gt;</a>
+            </div>
+        </div>
+        <div class="shangou_contant">
+            <div class="shangou_box">
+                <div class="title_time">18:00场</div>
+                <img src="https://i1.mifile.cn/f/i/2018/mihome/flashpurchase.png" alt="">
+                <div class="contant">距离开始还有</div>
+                <div class="timebox">
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                </div>
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt=""> </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+        </div>
+        <div class="shangou_foot">
+            <!--<img src="https://i1.mifile.cn/a4/xmad_15444404816837_VdZWU.jpg" alt="">-->
+        </div>
+    </div>
+</div>
+<!--小米闪购-->
+<div class="xm_shangou">
+    <div class="xm_shangou_box w">
+        <div class="shangou_title">
+            <h2>小米闪购</h2>
+            <div class="title_r">
+                <a href="#">&lt;</a>
+                <a href="#">&gt;</a>
+            </div>
+        </div>
+        <div class="shangou_contant">
+            <div class="shangou_box">
+                <div class="title_time">18:00场</div>
+                <img src="https://i1.mifile.cn/f/i/2018/mihome/flashpurchase.png" alt="">
+                <div class="contant">距离开始还有</div>
+                <div class="timebox">
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                    <span>:</span>
+                    <span>12</span>
+                </div>
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/1bbe27da-2232-dc2d-f305-f6fe60697653.jpg"  width="160px" height="160px" alt="">
+                    </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+            <div class="shangou_box">
+                <a href="#">
+                    <div class="img_box">
+                        <img src="https://i8.mifile.cn/v1/a1/43bd63ae-abc0-352a-5dc4-00b433ba9b23.jpg" alt=""> </div>
+                    <p>米家智能插座(ZigBee版) 白色</p>
+                    <p class="desc">超智能的插座</p>
+                    <p>
+                        <span>1元</span>
+                        <del>69元</del>
+                    </p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="xm_foot">
+    <div class="w">
+        <div class="foot_top">
+            <ul>
+                <li><a href="#"><i class="iconfont icon-wodebaobeiye_genghuan"></i>预约维修服务</a></li>
+                <li><span>|</span></li>
+                <li><a href="#"><i class="iconfont icon-wodebaobeiye_genghuan"></i>预约维修服务</a></li>
+                <li><span>|</span></li>
+                <li><a href="#"><i class="iconfont icon-wodebaobeiye_genghuan"></i>预约维修服务</a></li>
+                <li><span>|</span></li>
+                <li><a href="#"><i class="iconfont icon-wodebaobeiye_genghuan"></i>预约维修服务</a></li>
+                <li><span>|</span></li>
+                <li><a href="#"><i class="iconfont icon-wodebaobeiye_genghuan"></i>预约维修服务</a></li>
+            </ul>
+        </div>
+        <div class="foot_middle">
+            <div class="foot_box">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>账户管理</dd>
+                    <dd>购物指南</dd>
+                    <dd>订单操作</dd>
+                </dl>
+            </div>
+            <div class="foot_box">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>账户管理</dd>
+                    <dd>购物指南</dd>
+                    <dd>订单操作</dd>
+                </dl>
+            </div>
+            <div class="foot_box">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>账户管理</dd>
+                    <dd>购物指南</dd>
+                    <dd>订单操作</dd>
+                </dl>
+            </div>
+            <div class="foot_box">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>账户管理</dd>
+                    <dd>购物指南</dd>
+                    <dd>订单操作</dd>
+                </dl>
+            </div>
+            <div class="foot_box">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>账户管理</dd>
+                    <dd>购物指南</dd>
+                    <dd>订单操作</dd>
+                </dl>
+            </div>
+            <div class="foot_box_r">
+                <p>400-100-5678</p>
+                <p>
+                    周一至周日 8:00-18:00
+                    <br>
+                    （仅收市话费）
+                </p>
+                <a href="#">
+                    <i class="iconfont icon-lipin"></i>
+                    联系客服
+                </a>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <div class="foot_logo"></div>
+            <div class="foot_info">
+                <p><a href="">&copy;</a>
+                    <a href="">mi.com</a>
+                    <a href="">京ICP证110507号</a>
+                    <a href="">京ICP备10046444号</a>
+                    <a href="">京公网安备11010802020134号</a>
+                    <a href="">京网文[2017]1530-131号</a> <br>
+                    <a href="">（京）网械平台备字（2018）第00005号</a>
+                    <a href="">互联网药品信息服务资格证 (京) -非经营性-2014-0090</a>
+                    <a href="">营业执照</a>
+                    <a href="">医疗器械公告</a>
+                    <br>
+                    <a href="">违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</a>
+                </p>
+            </div>
+            <div class="info_r">
+                <a  href=""><img  src="https://i1.mifile.cn/f/i/17/site/truste.png" width="85px"/></a>
+                <a  href=""><img  src="https://s01.mifile.cn/i/v-logo-2.png"/></a>
+                <a  href=""><img  src="https://s01.mifile.cn/i/v-logo-1.png" /></a>
+                <a  href=""><img  src="https://s01.mifile.cn/i/v-logo-3.png" /></a>
+                <a  href=""><img  src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot_foot">探索黑科技，小米为发烧而生</div>
+
+
+
+
+
+
+
 
 <script src="jquery-1.12.4.js"></script>
 <script>
     $(function () {
-        var $li=$(".banner_box>ul>li");
+        var $li=$(".banner_box>.banner_img>ul>li");
         var count=0;
-
         $(".arrow_r").click(function () {
             count++;
             if(count==$li.length){
                 count=0;
             }
             $li.eq(count).fadeIn(1000).siblings().fadeOut(1000);
-        });
+        })
         $(".arrow_l").click(function () {
             count--;
             if(count==-1){
